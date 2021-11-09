@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> BUDZ </title>
+	<link rel="stylesheet" href="budz.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css1.css">
+</head>
+
+<body id="home">
+
+	<div id="navbar">
+
+		<div class="dropdown">
+			<button onclick="dropDown()" class="dropbtn">Menu</button>
+			<div id="menu" class="menu-content">
+				<a href="headphones_1.html">Headphones</a>
+				<a href="#">Earbuds</a>
+				<a href="#">Accessories</a>
+
+			</div>
+		</div>
+		<li><a href="#">About Us</a></li>
+	</div>
+
+
+	<div id="header">
+		<br>
+		<a class="home-tag" href="index.html">
+			<h1 id="budz"> Bud<span style="color:red">z</span>.</h1>
+		</a>
+		<h2> Upgrade your quality</h2>
+	</div>
+	<div class="container">
+		<div class="image-slide fade">
+			<a href="#"> <img id="logo" src=".\images\budz_home.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li>Headphones</li>
+					<li>Earbuds</li>
+					<li>Accessories</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="image-slide fade">
+			<a href="headphones_1.html"> <img id="logo" src=".\images\home_headphones.jpg" style="width:100%"
+					height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="headphones_1.html">Headphones</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="image-slide fade">
+			<a href="earphones_1.html"> <img id="logo" src=".\images\home_earphones.jpg" style="width:100%"
+					height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="#">Earphones</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="image-slide fade">
+			<a href="#"> <img id="logo" src=".\images\home_accessories.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<a class="prev" onclick="slideImage(-1)">&#10094;</a>
+		<a class="next" onclick="slideImage(1)">&#10095;</a>
+		<br>
+	</div>
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="current(1)"></span>
+		<span class="dot" onclick="current(2)"></span>
+		<span class="dot" onclick="current(3)"></span>
+		<span class="dot" onclick="current(4)"></span>
+	</div>
+
+	<!-- script to slide images in header-->
+	<script src="slideshow.js"></script>
+
+	<br>
+	<div id="home-article">
+		<div id="article-text">
+			<h1>Skullcandy Crusher Wireless Over-Ear Headphones</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span id="rating">(4)</span>
+			<h2> $325.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\skullcandy_crusher.jpg">
+	</div>
+	<br>
+
+	<div id="home-article">
+		<div id="article-text">
+			<h1>Beats by Dre Solo HD Monochromatic Headphone Matte Teal</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span id="rating">(3)</span>
+			<h2> $360.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\beats_solo_hd.jpg">
+	</div>
+	<br>
+
+	<div id="home-article">
+		<div id="article-text">
+			<h1>Monster DNA In-Ear Headphones with Apple ControlTalk (Black, Multilingual)</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span id="rating">(3)</span>
+			<h2> $220.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\monster_dna.jpg">
+	</div>
+	<br>
+
+
+	<div id="home-article">
+		<div id="article-text">
+			<h1>In-Ear Dr.Dre Monster Beats Earphone Earbuds Durable Carrying Pouch Accessories</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span id="rating">(5)</span>
+			<h2> $25.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\beats_pouch.jpg">
+	</div>
+	<br>
+
+	<div id="hidden">
+		<div id="article-text">
+			<h1>Sony MDR XB950B1</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span id="rating">(3)</span>
+			<h2> $250.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\Sony MDR XB950B1.jpg">
+	</div>
+	<br>
+
+	<div id="hidden">
+		<div id="article-text">
+			<h1>Active InEar Headphones</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span id="rating">(3)</span>
+			<h2> $190.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\Active InEar Headphones.jpg">
+	</div>
+	<br>
+
+
+	<div id="hidden">
+		<div id="article-text">
+			<h1>Stereo Bluetooth Wireless Headphones</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span id="rating">(3)</span>
+			<h2> $170.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\Stereo Bluetooth Wireless Headphones.jpeg">
+	</div>
+	<br>
+
+	<div id="hidden">
+		<div id="article-text">
+			<h1>JBL E65BT NC</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span id="rating">(4)</span>
+			<h2> $210.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\JBL E65BT NC.jpg">
+	</div>
+	<br>
+
+	<div id="hidden">
+		<div id="article-text">
+			<h1>Raw Audio True Wireless In-Ear Headphones - Black</h1>
+			<br><br><br><br><br><br><br><br>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span id="rating">(4)</span>
+			<h2> $230.00</h2>
+		</div>
+		<img onclick="modal(this)" src=".\images\Raw Audio True Wireless In-Ear Headphones - Black.jpg">
+	</div>
+	<br>
+
+	<!-- modal image section -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+	<!--show more button -->
+	<div id="buttonWrapper">
+		<button type="button" id="showMore" onclick="showMe()">Show More</button>
+	</div>
+
+	<!-- script for the showmore button -->
+	<script src="showmore.js"></script>
+
+	<!-- script for the menu button -->
+	<script src="dropmenu.js"></script>
+
+	<!--script for the modal image section -->
+	<script src="modalImage.js"></script>
+
+
+	<br><br><br>
+
+	<!--footer for all pages-->
+	<footer>
+		<p><a href="#"><img src="ig-logo.jpg" height="40px" width="40px" style="border-radius:10px"></a> follow us on
+			Instagram <br><br> <a href="#"><img src="fb-logo.png" height="42px" width="42px"
+					style="border-radius:9px"></a> like us on Facebook <br><br>
+			&copy; Copyright www.budz.com</p>
+		<div class="messages">
+			<form>
+				<h3>Sign Up Now</h3>
+				Name
+				<input type="input" placeholder="Mark Johnson" style="width: 300px"> <br><br>
+				Email
+				<input type="email" placeholder="myname@example.com" style="width: 300px">
+				<button value="Submit">Submit</button>
+			</form>
+		</div>
+		<br><br>
+	</footer>
+	<!-- end of footer -->
+</body>

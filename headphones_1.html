@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> BUDZ </title>
+	<link rel="stylesheet" href="budz.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>
+
+	<script>
+		document.documentElement.scrollTop = 900; //start page 900px from top of page
+	</script>
+	<div id="navbar">
+
+		<div class="dropdown">
+			<button onclick="dropDown()" class="dropbtn">Menu</button>
+			<div id="menu" class="menu-content">
+				<a href="index.html">Home</a>
+				<a href="#">Earbuds</a>
+				<a href="#">Accessories</a>
+			</div>
+		</div>
+		<li><a href="#">About Us</a></li>
+	</div>
+
+	<div id="header">
+		<br>
+		<a class="home-tag" href="index.html">
+			<h1 id="budz"> Bud<span style="color:red">z</span>.</h1>
+		</a>
+		<h2> Upgrade your quality</h2>
+	</div>
+	<div class="container">
+
+		<div class="image-slide fade">
+			<a href="#"> <img id="logo" src=".\images\home_headphones.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="#">Headphones</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="image-slide fade">
+			<a href="#"> <img id="logo" src=".\images\home_earphones.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="#">Earphones</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="image-slide fade">
+			<a href="#"> <img id="logo" src=".\images\home_accessories.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li><a href="#">Accessories</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="image-slide fade">
+			<a href="index.html"> <img id="logo" src=".\images\budz_home.jpg" style="width:100%" height="500px"> </a>
+
+			<div class="container-text">
+				<ul>
+					<li>Headphones</li>
+					<li>Earbuds</li>
+					<li>Accessories</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<a class="prev" onclick="slideImage(-1)">&#10094;</a>
+		<a class="next" onclick="slideImage(1)">&#10095;</a>
+		<br>
+	</div>
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="current(1)"></span>
+		<span class="dot" onclick="current(2)"></span>
+		<span class="dot" onclick="current(3)"></span>
+		<span class="dot" onclick="current(4)"></span>
+	</div>
+
+	<!-- script to slide images in header-->
+	<script src="slideshow.js"></script>
+
+
+
+
+	<div class="heaphoneProducts">
+		<!-- section showing products -->
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)" src=".\images\headphones page\Beats EP On-Ear Headphones.jpg">
+			<figcaption id="product-caption">Beats EP On-Ear Headphones <br> <span style="color:red"> $240.00</span>
+			</figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\BEATS Studio 3 Wireless Bluetooth Noise-Cancelling Headphones - Red.jpg">
+			<figcaption id="product-caption">BEATS Studio 3 Wireless Bluetooth Noise-Cancelling Headphones - Red <br>
+				<span style="color:red">$250.00 </span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\Bluetooth Wireless Foldable Headphones with Mic and Remote Control, Lime Green.jpg">
+			<figcaption id="product-caption">Bluetooth Wireless Foldable Headphones with Mic and Remote Control, Lime
+				Green <br> <span style="color:red">$195.00</span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)" src=".\images\headphones page\iLive Bluetooth Wireless Headphone, Red.jpg">
+			<figcaption id="product-caption">iLive Bluetooth Wireless Headphone, Red<br> <span style="color:red">$215.00
+				</span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\MDR-XB950N1 Wireless Noise Cancelling Headphones Green.jpg">
+			<figcaption id="product-caption">MDR-XB950N1 Wireless Noise Cancelling Headphones Green<br> <span
+					style="color:red">$180.00 </span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\Original LeTV Leme Wireless Bluetooth Headphones EB30A Earphone - Red.jpg">
+			<figcaption id="product-caption">Original LeTV Leme Wireless Bluetooth Headphones EB30A Earphone - Red<br>
+				<span style="color:red">$200.00</span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\Polaroid PHP8556 On-Ear Wired Headphones with Microphone - Pink.jpg">
+			<figcaption id="product-caption">Polaroid PHP8556 On-Ear Wired Headphones with Microphone - Pink<br> <span
+					style="color:red">$200.00</span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)" src=".\images\headphones page\SENNHEISER HD1 WIRELESS OVER-EAR HEADPHONES.jpg">
+			<figcaption id="product-caption">SENNHEISER HD1 WIRELESS OVER-EAR HEADPHONES<br> <span
+					style="color:red">$290.00</span></figcaption>
+		</figure>
+
+		<figure id="headphone-product">
+			<img onclick="modal(this)"
+				src=".\images\headphones page\Sony ZX220 Over-Ear Bluetooth Wireless Headphones.jpg">
+			<figcaption id="product-caption">Sony ZX220 Over-Ear Bluetooth Wireless Headphones<br> <span
+					style="color:red">$290.00</span></figcaption>
+		</figure>
+
+
+	</div>
+	<br><br><br><br><br><br><br><br>
+	<!-- modal image section -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+	<!--next and previous buttons -->
+	<div id="buttonWrapper">
+		<a href="#"><button type="button" id="prevP">previous</button></a>
+		<a href="#"><button type="button" id="nextP">next</button></a>
+		<div class="page">
+			<a class="active" href="#">1&nbsp;</a>
+			<a href="#">2&nbsp;</a>
+			<a href="#">3&nbsp;</a>
+		</div>
+	</div> <br><br><br>
+
+	<!-- script for the menu button -->
+	<script src="dropmenu.js"></script>
+
+	<!--script for the modal image section -->
+	<script src="modalImage.js"></script>
+
+
+	<br><br><br>
+	<!--footer for all pages-->
+	<footer>
+		<p><a href="#"><img src="ig-logo.jpg" height="40px" width="40px" style="border-radius:10px"></a> follow us on
+			Instagram <br><br> <a href="#"><img src="fb-logo.png" height="42px" width="42px"
+					style="border-radius:9px"></a> like us on Facebook <br><br>
+			&copy; Copyright www.budz.com</p>
+		<div class="messages">
+			<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
+				<h3>Sign Up Now</h3>
+				Name
+				<input type="input" placeholder="Mark Johnson" style="width: 300px"> <br><br>
+				Email
+				<input type="email" placeholder="myname@example.com" style="width: 300px">
+				<button value="Submit">Submit</button>
+			</form>
+		</div>
+		<br><br>
+	</footer>
+	<!-- end of footer -->
+</body>
